@@ -1,0 +1,57 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+a:link{
+	text-decoration: none;
+	color: black;
+}
+a:active{
+	color:black;
+}
+a:visited{
+	color: #9CA1B2;
+}
+ul{
+	column-count: 2;
+	column-gap: 10px;
+}
+.container{
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	background-color: #F0EDE6;
+}
+#assignment{
+	font-family: 'Cormorant Garamond', serif;
+	font-size: 110px;
+	font-weight: 600;
+	position: absolute;
+	left: calc(50% - 45vw);
+	top: calc(50% - 40vh);
+	width: 90vw;
+	height: 80vh;
+	text-align: center;
+	border: 3px solid black;
+	border-radius: 5px;
+}
+.list{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+	position: absolute;
+	width: 70vw;
+	height: 60vh;
+	left: 20%;
+	top: 45%;
+	line-height: 50px;
+}
+li:hover{
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	animation-name: ltr-spacing-change;
+	animation-duration: 3s;
+}
+@keyframes ltr-spacing-change {
+	from {letter-spacing: 4px;}
+	to {letter-spacing: 10px}
